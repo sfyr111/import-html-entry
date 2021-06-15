@@ -15,6 +15,7 @@
   ],
   "types": "./index.d.ts",
   "scripts": {
+    "dev": "webpack-dev-server",
     "lint": "npm test",
     "build": "npm run build:lib && npm run build:esm",
     "build:lib": "rm -fr ./lib && BABEL_ENV=lib babel ./src --out-dir ./lib --ignore 'src/**/__tests__/**/*.js'",
@@ -81,6 +82,7 @@
     ]
   },
   "dependencies": {
-    "@babel/runtime": "^7.7.2"
+    "@babel/runtime": "^7.7.2",
+    "webpack-dev-server": "^3.11.2"
   }
 }

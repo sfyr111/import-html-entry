@@ -8,9 +8,11 @@
 <script src="../dist/import-html-entry.js"></script>
 <script>
 
-	importHTML('./template.html').then(res => {
+	// importHTML.default('./template.html').then(res => {
+	importHTML.default('./components/demo.html').then(res => {
 		console.log(res.template);
 		res.execScripts().then(exports => {
+			console.log('---exports---');
 			console.log(exports);
 		});
 	});
